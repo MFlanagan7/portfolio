@@ -3,6 +3,11 @@
     
 }
 
+.link {
+    text-decoration: none;
+    color: #392F5A;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .navbar {

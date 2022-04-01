@@ -10,6 +10,34 @@ const Page = (props) => {
             <Main page='Home' />
         </div>
     );
+    } else if (props.page === "Design") {
+        return (
+            <div className={styles.page}>
+                <Navbar page='Design' />
+                <Main page='Design' />
+            </div>
+        );
+    } else if (props.page === "Development") {
+        return (
+            <div className={styles.page}>
+                <Navbar page='Development' />
+                <Main page='Development' />
+            </div>
+        );
+    } else if (props.page === "About") {
+        return (
+            <div className={styles.page}>
+                <Navbar page='About' />
+                <Main page='About' />
+            </div>
+        );
+    } else if (props.page === "Contact") {
+        return (
+            <div className={styles.page}>
+                <Navbar page='Contact' />
+                <Main page='Contact' />
+            </div>
+        );
     } 
     // else if (props.page === "locations") {
     //     return (
