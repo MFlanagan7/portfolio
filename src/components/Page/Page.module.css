@@ -1,0 +1,38 @@
+/* Smallest devices (575px and below) */
+.page {
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .page {
+        
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .page {
+        
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .page {
+        display: flex;
+        background-color: #9DD9D2;
+        height: 100vh;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .page {
+        
+    }
+}

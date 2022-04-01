@@ -1,0 +1,97 @@
+/* Smallest devices (575px and below) */
+.navbar {
+    z-index: 1;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .navbar {
+        
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar {
+    
+    }   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 100vh;
+        background-color: #FFF8F0;
+    }
+
+    h4 {
+        margin: 30px auto;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: 50px;
+    }
+
+    li {
+        margin: 30px 0 0 70px;
+        text-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .page {
+        font-size: 36px;
+        margin-top: 0;
+        margin-left: 390px;
+    }
+
+    .socialfooter {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        height: 40px;
+        width: 98vw;
+        left: 1vw;
+        right: 1vw;
+        bottom: 25px;
+    }
+
+    .hr {
+        width: 100%;
+        padding: 0;
+        border: none;
+        height: 3px;
+        background-color: #392F5A;
+    }
+
+    .socials {
+        position: absolute;
+        left: 100px;
+        bottom: 25px;
+        height: 40px;
+        width: fit-content;
+        background-color: #FFF8F0;
+    }
+
+    .icons {
+        color: #FF8811;
+        font-size: 40px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .icons:hover {
+        margin-left: 5px;
+        margin-top: -5px;
+        font-size: 45px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar {
+        
+    }
+}
