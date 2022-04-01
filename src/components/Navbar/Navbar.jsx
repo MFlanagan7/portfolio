@@ -7,11 +7,11 @@ const Navbar = (props) => {
         <div className={styles.navbar}>
             <h4>Michael Flanagan</h4>
             <ul>
-                <li>Home</li>
-                <li>Design</li>
-                <li>Development</li>
-                <li>About</li>
-                <li>Contact</li>
+                {props.page === 'Home' ? <li className={styles.active}>Home</li>  : <li>Home</li>}
+                {props.page === 'Design' ? <li className={styles.active}>Design</li>  : <li>Design</li>}
+                {props.page === 'Development' ? <li className={styles.active}>Development</li>  : <li>Development</li>}
+                {props.page === 'About' ? <li className={styles.active}>About</li>  : <li>About</li>}
+                {props.page === 'Contact' ? <li className={styles.active}>Contact</li>  : <li>Contact</li>}
             </ul>
             <section className={styles.page}>{props.page}</section>
             <footer className={styles.socialfooter}>

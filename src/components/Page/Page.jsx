@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import styles from "./Page.module.css";
 
 const Page = (props) => {
-    if (props.page === "home") {
+    if (props.page === "Home") {
     return (
         <div className={styles.page}>
             <Navbar page='Home' />

@@ -6,6 +6,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" exact element={Home} />
+        {/* <Route path="/design" exact element={Design} />
+        <Route path="/development" exact element={Development} />
+        <Route path="/about" exact element={About} />
+        <Route path="/contact" exact element={Contact} /> */}
       </Routes>
     </Router>
   );
