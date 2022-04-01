@@ -1,6 +1,8 @@
 import styles from "./Main.module.css";
 import { projects } from "../../projects.js";
 import Project from "../Project/Project";
+import { GoPrimitiveDot } from "react-icons/go";
+import { IconContext } from 'react-icons';
 
 const Main = (props) => {
     if (props.page === "Home") {
@@ -17,8 +19,19 @@ const Main = (props) => {
             return (
                 <div className={styles.design}>
                     {projects.map((project) => {
-                        return <Project key={project.id} project={project} />
+                            return (
+                                <Project key={project.id} project={project} />
+                            );
                     })}
+                    <div className={styles.pagination}>
+                        {projects.map((project) => {
+                                return (
+                                    <IconContext.Provider value={{ className: styles.icons }}>
+                                        <GoPrimitiveDot />
+                                    </IconContext.Provider>
+                                );
+                        })}
+                    </div>
                 </div>
             );
         } else if (props.page === "Development") {

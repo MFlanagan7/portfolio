@@ -29,8 +29,36 @@
     }
 
     .design, .development {
-
+        display: flex;
+        flex-direction: row;
+        margin: 5vh 2vh 2vh 40vh;
+        overflow-x: hidden;
+        max-width: calc(100vw - 450px);
     }
+
+    .pagination {
+        position: absolute;
+        left: 550px;
+        bottom: 25px;
+        height: 40px;
+        width: fit-content;
+        background-color: #9DD9D2;
+    }
+
+    .icons {
+        color: #392F5A;
+        font-size: 30px;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+
+    .icons:hover {
+        font-size: 40px;
+        margin: 0;
+        background-color: #FFF8F0;
+        border-radius: 50%;
+    }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
