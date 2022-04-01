@@ -45,12 +45,15 @@
     ul {
         list-style-type: none;
         margin-top: 50px;
+        width: fit-content;
     }
 
     li {
-        margin: 30px 0 0 70px;
+        margin: 25px 0 0 70px;
         cursor: pointer;
         height: 23px;
+        width: fit-content;
+        padding-bottom: 10px;
     }
 
     li:hover {
@@ -59,7 +62,8 @@
 
     .active {
         font-size: 23px;
-        text-decoration: underline 5px solid #FF8811;
+        border-bottom: 5px solid #FF8811;
+        background-color: none;
     }
 
     .page {

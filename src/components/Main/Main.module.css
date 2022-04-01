@@ -20,7 +20,12 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .main {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0 auto;
+        font-size: 28px;
     }
 }
 

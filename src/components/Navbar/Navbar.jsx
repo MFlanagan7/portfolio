@@ -17,10 +17,10 @@ const Navbar = (props) => {
                 <Link className={styles.link} to="/development">
                     {props.page === 'Development' ? <li className={styles.active}>Development</li>  : <li>Development</li>}
                 </Link>
-                <Link className={styles.link} to="/About">
+                <Link className={styles.link} to="/about">
                     {props.page === 'About' ? <li className={styles.active}>About</li>  : <li>About</li>}
                 </Link>
-                <Link className={styles.link} to="/Contact">
+                <Link className={styles.link} to="/contact">
                     {props.page === 'Contact' ? <li className={styles.active}>Contact</li>  : <li>Contact</li>}
                 </Link>
             </ul>
