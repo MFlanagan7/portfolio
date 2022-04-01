@@ -1,41 +1,37 @@
 /* Smallest devices (575px and below) */
-.main {
+.project {
     
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .main {
+    .project {
         
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .main {
+    .project {
     
     }   
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .home {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        margin: 0 auto;
-        font-size: 28px;
+    img {
+        max-width: 50%;
+        max-height: 50%;
     }
 
-    .design, .development {
-
+    .project {
+        
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .main {
+    .project {
         
     }
 }
