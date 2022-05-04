@@ -26,7 +26,7 @@ const Main = (props) => {
                     <div className={styles.pagination}>
                         {projects.map((project) => {
                                 return (
-                                    <IconContext.Provider value={{ className: styles.icons }}>
+                                    <IconContext.Provider key={project.id} value={{ className: styles.icons }}>
                                         <GoPrimitiveDot />
                                     </IconContext.Provider>
                                 );
