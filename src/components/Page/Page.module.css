@@ -25,7 +25,7 @@
     
     .page {
         display: flex;
-        background-color: #9DD9D2;
+        /* background-color: #9DD9D2; */
         height: 100vh;
     }
 }
@@ -35,4 +35,22 @@
     .page {
         
     }
+}
+
+/* Light style */
+.lightPage {
+    background-color: #9DD9D2;
+    color: #392F5A;
+}
+
+/* Dark style */
+.darkPage {
+    background-color: #252D30;
+    color: #FFFFFF;
+}
+
+/* Blue style */
+.bluePage {
+    background-color: #1B2667;
+    color: #FFFFFF;
 }

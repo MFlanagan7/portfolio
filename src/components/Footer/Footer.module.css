@@ -1,77 +1,36 @@
 /* Smallest devices (575px and below) */
-.navbar {
+.footer {
     
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .navbar {
+    .footer {
         
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .navbar {
+    .footer {
     
     }   
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .navbar {
+    .footer {
         display: flex;
         flex-direction: column;
-        width: 450px;
-        height: 100vh;
-        background-color: #FFF8F0;
-    }
-
-    h4 {
-        margin: 30px auto;
-        height: 22px;
-        cursor: pointer;
-    }
-
-    h4:hover {
-        font-size: 22px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin-top: 50px;
-        width: fit-content;
-    }
-
-    li {
-        margin: 25px 0 0 70px;
-        cursor: pointer;
-        height: 23px;
-        width: fit-content;
-        padding-bottom: 10px;
-    }
-
-    li:hover {
-        font-size: 23px;
-    }
-
-    .active {
-        font-size: 23px;
-        border-bottom: 5px solid #FF8811;
-        background-color: none;
-    }
-
-    .page {
-        font-size: 36px;
-        margin-top: 0;
-        margin-left: 390px;
+        width: 98vw;
+        height: 0.75vh;
         /* background-color: #FFF8F0; */
     }
 
     .socialfooter {
         display: flex;
         align-items: center;
-        position: absolute;
+        position: fixed;
         height: 40px;
         width: 98vw;
         left: 1vw;
@@ -108,68 +67,65 @@
         margin-top: -5px;
         font-size: 45px;
     }
+
+    .pagination {
+        position: absolute;
+        left: 550px;
+        bottom: 25px;
+        height: 40px;
+        width: fit-content;
+        /* background-color: #9DD9D2; */
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .navbar {
+    .footer {
         
     }
 }
 
 /* Light style */
-.lightNav {
-    background-color: #FFF8F0;
-    color: #392F5A;
-}
-
-.lightLink {
-    text-decoration: none;
-    color: #392F5A;
-}
-
 .lightHR {
     background-color: #392F5A;
 }
 
-.lightIcons {
+.lightNavIcons {
     color: #FF8811;
+    background-color: #FFF8F0;
+}
+
+.lightMainIcons {
+    color: #FF8811;
+    background-color: #9DD9D2;
 }
 
 /* Dark style */
-.darkNav {
-    background-color: #151D20;
-    color: #FFFFFF;
-}
-
-.darkLink {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
 .darkHR {
     background-color: #DDDDDD;
 }
 
-.darkIcons {
+.darkNavIcons {
     color: #2D9BDB;
+    background-color: #151D20;
+}
+
+.darkMainIcons {
+    color: #2D9BDB;
+    background-color: #252D30;
 }
 
 /* Blue style */
-.blueNav {
-    background-color: #030E4F;
-    color: #FFFFFF;
-}
-
-.blueLink {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
 .blueHR {
     background-color: #DDDDDD;
 }
 
-.blueIcons {
+.blueNavIcons {
     color: #FEA926;
+    background-color: #030E4F;
+}
+
+.blueMainIcons {
+    color: #FEA926;
+    background-color: #1B2667;
 }

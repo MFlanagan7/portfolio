@@ -1,13 +1,23 @@
 import styles from "./Main.module.css";
 import { projects } from "../../projects.js";
 import Project from "../Project/Project";
-import { GoPrimitiveDot } from "react-icons/go";
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import { ThemeContext } from "../../ThemeContext";
+import { useState, useContext, useEffect } from "react";
 
 const Main = (props) => {
+    const appTheme = useContext(ThemeContext);
+    const [theme, setTheme] = useState();
+    useEffect(() => {
+        setTheme(appTheme.theme);
+        console.log(theme);
+    }, [appTheme.theme, theme]);
+
     if (props.page === "Home") {
         return (
             <div className={styles.home}>
+                
                 <p>👋 Hello.</p>
                 <p>I am a web designer</p>
                 <p>developer</p>
@@ -18,20 +28,18 @@ const Main = (props) => {
         } else if (props.page === "Design") {
             return (
                 <div className={styles.design}>
+                    <IconContext.Provider value={{ className: `${styles.icons} ${styles.leftArrow} ${theme === 'light' ? styles.lightIcons : theme === 'dark' ? styles.darkIcons : styles.blueIcons}` }}>
+                        <AiOutlineLeft />
+                    </IconContext.Provider>
                     {projects.map((project) => {
                             return (
                                 <Project key={project.id} project={project} />
                             );
                     })}
-                    <div className={styles.pagination}>
-                        {projects.map((project) => {
-                                return (
-                                    <IconContext.Provider key={project.id} value={{ className: styles.icons }}>
-                                        <GoPrimitiveDot />
-                                    </IconContext.Provider>
-                                );
-                        })}
-                    </div>
+                    <IconContext.Provider value={{ className: `${styles.icons} ${styles.rightArrow} ${theme === 'light' ? styles.lightIcons : theme === 'dark' ? styles.darkIcons : styles.blueIcons}` }}>
+                        <AiOutlineRight />
+                    </IconContext.Provider>
+                    
                 </div>
             );
         } else if (props.page === "Development") {

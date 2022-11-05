@@ -1,0 +1,47 @@
+/* Light style */
+.lightNav {
+    background-color: #FFF8F0;
+    color: #392F5A;
+}
+
+.lightAccent {
+    background-color: #FF8811;
+    color: #FFF8F0;
+}
+
+.lightMain {
+    background-color: #9DD9D2;
+    color: #392F5A;
+}
+
+/* Dark style */
+.darkNav {
+    background-color: #151D20;
+    color: #FFFFFF;
+}
+
+.darkAccent {
+    background-color: #2D9BDB;
+    color: #FFFFFF;
+}
+
+.darkMain {
+    background-color: #252D30;
+    color: #FFFFFF;
+}
+
+/* Blue style */
+.blueNav {
+    background-color: #030E4F;
+    color: #FFFFFF;
+}
+
+.blueAccent {
+    background-color: #FEA926;
+    color: #FFFFFF;
+}
+
+.blueMain {
+    background-color: #1B2667;
+    color: #FFFFFF;
+}

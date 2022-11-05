@@ -4,6 +4,8 @@ import project3 from "./img/global-web.webp"
 
 export const skills = ['html', 'css', 'javascript', 'github', 'firebase', 'netlify', 'react', 'vscode']
 
+// curl https://api.github.com/users/MFlanagan7/repos --ssl-no-revoke
+
 export const projects = [
     {
       id: 1,

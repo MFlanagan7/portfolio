@@ -42,11 +42,11 @@
         bottom: 25px;
         height: 40px;
         width: fit-content;
-        background-color: #9DD9D2;
+        /* background-color: #9DD9D2; */
     }
 
     .icons {
-        color: #392F5A;
+        /* color: #392F5A; */
         font-size: 30px;
         margin: 5px 0;
         cursor: pointer;
@@ -59,6 +59,20 @@
         border-radius: 50%;
     }
 
+    .leftArrow {
+        position: fixed;
+        top: 35%;
+        left: 45%;
+    }
+
+    .rightArrow {
+        position: fixed;
+        top: 35%;
+        right: 15%;
+    }
+
+    
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -66,4 +80,19 @@
     .main {
         
     }
+}
+
+/* Light style */
+.lightIcons {
+    color: #FF8811;
+}
+
+/* Dark style */
+.darkIcons {
+    color: #2D9BDB;
+}
+
+/* Blue style */
+.blueIcons {
+    color: #FEA926;
 }
