@@ -8,7 +8,7 @@ export const skills = ['html', 'css', 'javascript', 'github', 'firebase', 'netli
 
 export const projects = [
     {
-      id: 1,
+      id: 0,
       title: 'Portfolio Site',
       summary: [
         'This project was one of my favorites so far and has helped me break out of tutorial hell.  I also wanted this project to serve as a display of my JavasScript and React skills to potential employers or collaborators.  While I am still learning both technologies, I have learned so much with this project already, and I am sure that I will learn even more as I continue to make improvements to it as my skills grow.',
@@ -29,7 +29,7 @@ export const projects = [
       github: 'https://github.com/MFlanagan7/portfolio-site',
     },
     {
-      id: 2,
+      id: 1,
       title: 'One Page Responsive',
       summary: [
         'The task: Recreate a landing page created using Bootstrap',
@@ -49,8 +49,8 @@ export const projects = [
       github: 'https://github.com/MFlanagan7/one-page-responsive',
     },
     {
-      id: 3,
-      title: 'Globl Web',
+      id: 2,
+      title: 'Global Web',
       summary: [
         'This was one of my first projects with HTML and CSS where I learned a lot of basics.  The Coronavirus and other global concerns were the inspiration, and the site is geared toward travel safety precautions. A static HTML website with several pages along with CSS as the only technologies used allowed me to focus on learning only the basics without having to worry about learning too much at once.',
       ],

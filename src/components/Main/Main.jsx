@@ -1,7 +1,8 @@
 import styles from "./Main.module.css";
 import { projects } from "../../projects.js";
 import Project from "../Project/Project";
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { AiOutlineLeft } from 'react-icons/ai';
+import { BiRightArrowAlt } from 'react-icons/bi'
 import { IconContext } from 'react-icons';
 import { ThemeContext } from "../../ThemeContext";
 import { useState, useContext, useEffect } from "react";
@@ -13,6 +14,10 @@ const Main = (props) => {
         setTheme(appTheme.theme);
         console.log(theme);
     }, [appTheme.theme, theme]);
+
+    function handleClick() {
+        props.updateProjectID();
+    }
 
     if (props.page === "Home") {
         return (
@@ -28,16 +33,18 @@ const Main = (props) => {
         } else if (props.page === "Design") {
             return (
                 <div className={styles.design}>
-                    <IconContext.Provider value={{ className: `${styles.icons} ${styles.leftArrow} ${theme === 'light' ? styles.lightIcons : theme === 'dark' ? styles.darkIcons : styles.blueIcons}` }}>
-                        <AiOutlineLeft />
-                    </IconContext.Provider>
                     {projects.map((project) => {
-                            return (
-                                <Project key={project.id} project={project} />
-                            );
+                            console.log('from Main: ' + project.id);
+                            if (props.projectID % projects.length === project.id) {
+                                console.log('equal');
+                                return (
+                                    <Project key={project.id} project={project} />
+                                );
+                            }
+                            
                     })}
                     <IconContext.Provider value={{ className: `${styles.icons} ${styles.rightArrow} ${theme === 'light' ? styles.lightIcons : theme === 'dark' ? styles.darkIcons : styles.blueIcons}` }}>
-                        <AiOutlineRight />
+                        <BiRightArrowAlt onClick={() => handleClick()}/>
                     </IconContext.Provider>
                     
                 </div>

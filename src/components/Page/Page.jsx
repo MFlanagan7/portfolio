@@ -13,6 +13,12 @@ const Page = (props) => {
         console.log(theme);
     }, [appTheme.theme, theme]);
 
+    const [projectID, setProjectID] = useState(0);
+    function updateProjectID() {
+        setProjectID(projectID + 1);
+        console.log('from Page: ' + projectID);
+    }
+
     if (props.page === "Home") {
     return (
         <div className={`${styles.page} ${theme === 'light' ? styles.lightPage : theme === 'dark' ? styles.darkPage : styles.bluePage}`}>
@@ -25,8 +31,8 @@ const Page = (props) => {
         return (
             <div className={`${styles.page} ${theme === 'light' ? styles.lightPage : theme === 'dark' ? styles.darkPage : styles.bluePage}`}>
                 <Navbar page='Design' />
-                <Main page='Design' />
-                <Footer page='Design' />
+                <Main page='Design' projectID={projectID} updateProjectID={updateProjectID} />
+                <Footer page='Design' projectID={projectID} updateProjectID={updateProjectID} />
             </div>
         );
     } else if (props.page === "Development") {

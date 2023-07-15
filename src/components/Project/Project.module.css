@@ -25,10 +25,13 @@
     }
 
     .project {
-        background-color: #999;
         width: fit-content;
         height: fit-content;
         margin-right: 20px;
+    }
+
+    .project img {
+        border-radius: 25px;
     }
 }
 
