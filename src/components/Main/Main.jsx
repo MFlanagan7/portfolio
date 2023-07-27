@@ -40,6 +40,7 @@ const Main = (props) => {
                                     <Project key={project.id} project={project} />
                                 );
                             }
+                            else return <></>
                             
                     })}
                     <IconContext.Provider value={{ className: `${styles.icons} ${styles.rightArrow} ${theme === 'light' ? styles.lightIcons : theme === 'dark' ? styles.darkIcons : styles.blueIcons}` }}>
