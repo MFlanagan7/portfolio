@@ -10,13 +10,18 @@ const Page = (props) => {
     const [theme, setTheme] = useState();
     useEffect(() => {
         setTheme(appTheme.theme);
-        console.log(theme);
+        // console.log(theme);
     }, [appTheme.theme, theme]);
 
     const [projectID, setProjectID] = useState(0);
-    function updateProjectID() {
-        setProjectID(projectID + 1);
-        console.log('from Page: ' + projectID);
+    function updateProjectID(pid) {
+        if (pid >= 0) {
+            // console.log('from Page, pid = ' + pid);
+            return setProjectID(pid);
+        }
+        
+        // setProjectID(projectID + 1);
+        // console.log('from Page: ' + projectID);
     }
 
     if (props.page === "Home") {

@@ -28,6 +28,10 @@
         font-size: 28px;
     }
 
+    .text-rollover {
+        
+    }
+
     .design, .development {
         display: flex;
         flex-direction: row;

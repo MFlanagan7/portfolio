@@ -52,7 +52,7 @@ export const projects = [
       id: 2,
       title: 'Global Web',
       summary: [
-        'This was one of my first projects with HTML and CSS where I learned a lot of basics.  The Coronavirus and other global concerns were the inspiration, and the site is geared toward travel safety precautions. A static HTML website with several pages along with CSS as the only technologies used allowed me to focus on learning only the basics without having to worry about learning too much at once.',
+        'This was one of my first projects since high school with HTML and CSS where I learned a lot of basics.  The Coronavirus and other global concerns were the inspiration, and the site is geared toward travel safety precautions. A static HTML website with several pages along with CSS as the only technologies used allowed me to focus on learning only the basics without having to worry about learning too much at once.',
       ],
       lessons: [
         'I learned how to keep an organized CSS document, how classes are applied, CSS selector specificity, as well as some basic layout ideas and aesthetics.  I learned about media queries, even for printing a web page, and making web pages responsive.',

@@ -1,7 +1,6 @@
 import styles from "./Main.module.css";
 import { projects } from "../../projects.js";
 import Project from "../Project/Project";
-import { AiOutlineLeft } from 'react-icons/ai';
 import { BiRightArrowAlt } from 'react-icons/bi'
 import { IconContext } from 'react-icons';
 import { ThemeContext } from "../../ThemeContext";
@@ -12,11 +11,11 @@ const Main = (props) => {
     const [theme, setTheme] = useState();
     useEffect(() => {
         setTheme(appTheme.theme);
-        console.log(theme);
+        // console.log(theme);
     }, [appTheme.theme, theme]);
 
     function handleClick() {
-        props.updateProjectID();
+        props.updateProjectID(props.projectID + 1);
     }
 
     if (props.page === "Home") {
@@ -34,9 +33,9 @@ const Main = (props) => {
             return (
                 <div className={styles.design}>
                     {projects.map((project) => {
-                            console.log('from Main: ' + project.id);
+                            // console.log('from Main: ' + project.id);
                             if (props.projectID % projects.length === project.id) {
-                                console.log('equal');
+                                // console.log('equal');
                                 return (
                                     <Project key={project.id} project={project} />
                                 );

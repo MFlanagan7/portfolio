@@ -11,8 +11,13 @@ const Footer = (props) => {
     const [theme, setTheme] = useState();
     useEffect(() => {
         setTheme(appTheme.theme);
-        console.log(theme);
+        // console.log(theme);
     }, [appTheme.theme, theme]);
+
+    function handleClick(pid) {
+        props.updateProjectID(pid);
+        // console.log("project id set to: " + pid);
+    }
 
     if (props.page === "Home") {
         return (
@@ -44,11 +49,17 @@ const Footer = (props) => {
                     </div>
                     <div className={styles.pagination}>
                         {projects.map((project) => {
+                            if (props.projectID % projects.length === project.id)
                                 return (
                                     <IconContext.Provider key={project.id} value={{ className: `${styles.icons} ${theme === 'light' ? styles.lightMainIcons : theme === 'dark' ? styles.darkMainIcons : styles.blueMainIcons}` }}>
                                         <GoPrimitiveDot />
                                     </IconContext.Provider>
                                 );
+                            else return (
+                                <IconContext.Provider key={project.id} value={{ className: `${styles.icons} ${theme === 'light' ? styles.lightMainIcons : theme === 'dark' ? styles.darkMainIcons : styles.blueMainIcons}` }}>
+                                    <GoPrimitiveDot onClick={() => handleClick(project.id)} />
+                                </IconContext.Provider>
+                            );
                         })}
                     </div>
                 </>

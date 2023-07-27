@@ -60,12 +60,23 @@
         font-size: 40px;
         margin: 0 10px;
         cursor: pointer;
+        border-radius: 50px;
+    }
+
+    .activated {
+        margin: -5px 10px 0 5px;
+        font-size: 45px;
+        cursor: pointer;
+        background-color: #FFF8F0;
+        border-radius: 50px;
     }
 
     .icons:hover {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 45px;
+        background-color: #FFF8F0;
+        border-radius: 50px;
     }
 
     .pagination {
